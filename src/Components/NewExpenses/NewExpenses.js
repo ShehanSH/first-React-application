@@ -3,7 +3,7 @@ import "./NewExpenses.css";
 import ExpenseForm from "./ExpenseForm";
 
 const NewExpenses = (props) => {
-
+  //create function for get form inputs and save that inputs and show.
   const SaveExpenseDataHandler = (enteredExpenseData) => {
     const expenseData = {
 
@@ -17,7 +17,7 @@ const NewExpenses = (props) => {
 
   return (
     <div className='new-expense'> 
-    <ExpenseForm onSaveExpenseData = {SaveExpenseDataHandler}/>
+    <ExpenseForm onSaveExpenseData = {SaveExpenseDataHandler}/> 
     </div>
   );
 };
